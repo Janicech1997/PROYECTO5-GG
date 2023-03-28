@@ -1,0 +1,62 @@
+
+  
+body {
+    background-image: url('https://img.freepik.com/free-vector/white-abstract-background_23-2148806276.jpg');
+}
+  
+.formregister {
+    width: 400px;
+    background: #ea910d;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: rgb(0, 0, 0);
+    box-shadow: 7px 13px 37px rgb(244, 239, 239);
+}
+  
+.formregister h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+  
+.controls {
+    width: 100%;
+    background: #edf0f3;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+  
+.formregister p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+  
+.formregister a {
+    color: white;
+    text-decoration: none;
+}
+  
+.formregister a:hover {
+    color: white;
+    text-decoration: underline;
+}
+  
+.formregister .botons {
+    width: 100%;
+    background: #000000;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
