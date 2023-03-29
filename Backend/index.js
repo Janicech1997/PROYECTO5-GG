@@ -4,11 +4,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
-const PORT = 4006
-const {librosRouter}= require('./routes')
-
-
-app.use('/api', librosRouter)
+const PORT = 4000
 
  
 app.get('/', (req,res)=>{
