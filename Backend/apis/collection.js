@@ -1,34 +1,34 @@
 const express = require('express')
 const router  = express.Router();
-const { bookController} = require('../controllers')
-const {  getbook,
-    getbookById,
-    updateBook,
-    createBook,
-    removeBook} = bookController
+const { contactController} = require('../controllers')
+const {  getcontact,
+    getcontactById,
+    updatecontact,
+    createcontact,
+    removecontact} = contactController
 router.get('/', async(req,res)=> {
-    const books = await getbook();
-    res.send(books)
+    const contact = await getcontact();
+    res.send(contact)
 })
 
 router.get('/:id', async(req,res)=>{
     const {id} = req.params
-    const books = await getbookById(id)
-    if(!books){
+    const contact = await getcontactById(id)
+    if(!contact){
         res.status(404)
         return res.send({
             message: `No se encontro el elemento con id: ${id} :(`
         })
     }
-    return res.send(books)
+    return res.send(contact)
 })
 
 router.post('/', async(req,res)=>{
     const body = req.body;
     try{
-        const newBook = await createBook(body)
-        console.log(newBook)
-        res.send(newBook)    
+        const newcontact = await createcontact(body)
+        console.log(newcontact)
+        res.send(newcontact)    
     } 
     catch(err) {
         console.error(err)
@@ -38,18 +38,18 @@ router.post('/', async(req,res)=>{
 router.put('/:id', async(req,res) =>{
     const {id} = req.params
     const body = req.body
-    const books = await updateBook(id, body)
-    if(!books) {
+    const contact = await updatecontact(id, body)
+    if(!contact) {
         res.status(404)
         return res.send({
             message: `No se encontro el elemento con id: ${id} :(`
         })
     }
-    return res.send(books)
+    return res.send(contact)
 })
 router.delete('/:id', async(req,res)=>{
     const {id} = req.params
-    const resultado = await removeBook(id)
+    const resultado = await removecontact(id)
     res.send(resultado)
   
 })

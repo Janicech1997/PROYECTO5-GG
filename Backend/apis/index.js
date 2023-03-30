@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-const booksRouter = require('./collection')
+const contactRouter = require('./collection')
 
-router.use('/books', booksRouter)
+router.use('/contact', contactRouter)
 
 module.exports = router
