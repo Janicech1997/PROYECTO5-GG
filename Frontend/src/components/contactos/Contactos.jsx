@@ -39,8 +39,8 @@ function Contactos (){
                 <input type="email" placeholder="Email" />
               </div>
               <div className="col-lg-12">
-                <input type="text" placeholder="Mensaje" />
-                <textarea placeholder="Message" defaultValue={""} />
+                <input type="text" placeholder="Asunto" />
+                <textarea placeholder="Mensaje" defaultValue={""} />
                 <button className="site-btn btn-sm">Enviar</button>
               </div>
             </div>

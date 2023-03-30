@@ -1,17 +1,21 @@
-const express = require('express')
-const cors = require('cors')
-const app = express()
+const express = require('express');
+const app = express();
+const cors = require('cors');
+const router = require('./apis');
+app.use(cors());
+require('./db/mongodb');
 
-app.use(cors())
 app.use(express.json())
-const PORT = 4000
+app.use(router)
 
- 
+
+
 app.get('/', (req,res)=>{
-    res.send('Esto esta vivo')
+    res.send('Servidor en linea')
 })
 
 
-app.listen(PORT,()=>{
-    console.log(`Servidor conectado en el puerto ${PORT}`)
+const PORT = 3500;
+app.listen(PORT, ()=>{
+    console.log(`Servidor conectado en puerto ${PORT}`)
 })
