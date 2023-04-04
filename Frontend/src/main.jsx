@@ -5,7 +5,7 @@ import App from "./App";
 import Contactos from "./components/contactos/Contactos";
 import Inicio from "./components/inicio/Inicio";
 import Productos from "./components/productos/Productos";
-import Registrarse from "./components/iniciarsesion/registrarse";
+import Registrarse from "./components/iniciarsesion/Registrarse";
 import Iniciarsesion from "./components/iniciarsesion/iniciarsesion";
 
 

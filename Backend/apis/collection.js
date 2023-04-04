@@ -45,7 +45,7 @@ router.put('/:id', async(req,res) =>{
             message: `No se encontro el elemento con id: ${id} :(`
         })
     }
-    return res.send(contact)
+    return res.send(registro)
 })
 router.delete('/:id', async(req,res)=>{
     const {id} = req.params

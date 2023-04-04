@@ -1,22 +1,21 @@
-const express = require('express');
-const app = express();
-const cors = require('cors');
-const registroRouter = require('./apis');
-app.use(cors());
-require('dotenv').config();
-require('./db/mongodb');
+const express = require('express')
+const app = express()
+const cors = require('cors')
+const registroRouter = require('./apis')
+require('dotenv').config()
+require('./db/mongodb')
+
+app.use(cors())
 
 app.use(express.json())
-app.use(router)
+const PUERTO = process.env.PORT || 4500
 
-
+app.use(registroRouter)
 
 app.get('/', (req,res)=>{
-    res.send('Servidor en linea')
+ res.send('Servidor vivo')
 })
 
-
-const PORT = 3500;
-app.listen(PORT, ()=>{
-    console.log(`Servidor conectado en puerto ${PORT}`)
+app.listen(PUERTO, ()=>{
+    console.log(`Servidor conectado en puerto ${PUERTO}`)
 })

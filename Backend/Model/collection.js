@@ -1,26 +1,28 @@
 const mongoose = require('mongoose')
-const { Schema } = mongoose
-
+const {Schema} = mongoose
 
 const registroSchema = new Schema({
-    Nombre:{
-        type:String,
-        required:true
+    nombres: {
+        type: String,
+        required: true
     },
-    Email:{
-        type:String,
-        required:true
+    apellidos: {
+        type: String,
+        required: true
     },
-    Asunto:{
-        type:String,
-        required:true
-    },
-    Mensaje:{
-        type:String,
+    correo: {
+        type: String,
+        required: true
+    }, 
+    password: {
+        type: String,
         required:true
     }
+},{
+    versionKey: false,
+    timestamps: true
 })
 
-const registroModel = mongoose.model('registro', registroSchema)
+const registroModel = mongoose.model('register', registroSchema)
 
 module.exports = registroModel
