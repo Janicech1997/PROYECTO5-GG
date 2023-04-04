@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const { Schema } = mongoose
 
 
-const contactSchema = new Schema({
+const registroSchema = new Schema({
     Nombre:{
         type:String,
         required:true
@@ -21,6 +21,6 @@ const contactSchema = new Schema({
     }
 })
 
-const contactModel = mongoose.model('contact', contactSchema)
+const registroModel = mongoose.model('registro', registroSchema)
 
-module.exports = contactModel
+module.exports = registroModel

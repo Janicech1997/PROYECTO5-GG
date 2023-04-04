@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const router = require('./apis');
+const registroRouter = require('./apis');
 app.use(cors());
+require('dotenv').config();
 require('./db/mongodb');
 
 app.use(express.json())

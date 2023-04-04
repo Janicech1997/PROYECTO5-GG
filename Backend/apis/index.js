@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-const contactRouter = require('./collection')
+const registroRouter = require('./collection')
 
-router.use('/contact', contactRouter)
+router.use('/registro', registroRouter)
 
 module.exports = router

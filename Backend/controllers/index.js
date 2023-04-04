@@ -1,5 +1,5 @@
-const contactController = require('./collection')
+const registroController = require('./collection')
 
 module.exports = {
-    contactController
+    registroController
 }

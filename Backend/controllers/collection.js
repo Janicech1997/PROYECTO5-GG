@@ -1,42 +1,42 @@
-const contactModel = require('../model/collection');
+const registroModel = require('../model/collection');
  // Obtener todos los elementos
- const getcontact = async() =>{
-const contact = await contactModel.find({})
+ const getRegistro = async() =>{
+const contact = await registroModel.find({})
 //  return contactModel.find({})
-return contact
+return registro
  }
  // Obtener un libro 
- const getcontactById = async(_id) => {
+ const getregistroById = async(_id) => {
    
     //  const newContact = new contactModel(body)
     //  await newContact.save()
     //  return newContact
-    return await contactModel.findOne({ _id })
+    return await registroModel.findOne({ _id })
  }
  //Crear 
- const createcontact = async(body) =>{
+ const createRegistro = async(body) =>{
    
-     const newcontact = new contactModel(body)
-     await newcontact.save()
-     return newcontact
+     const newRegistro = new registroModel(body)
+     await newRegistro.save()
+     return newRegistro
  }
  // Actualizar  
- const updatecontact = async(_id, updateObject) =>{
+ const updateRegistro = async(_id, updateObject) =>{
     
-     return contactModel.findOneAndUpdate({_id}, updateObject, {
+     return registroModel.findOneAndUpdate({_id}, updateObject, {
          // Si es upsert es verdadero, el documento de la colección existe y si no es verdadero, entonces no hace nada.
          upsert: false,
          // Si new existe, se devuelve el documento modificado después de la actualización en lugar del original; si es falso, se devuelve el documento original.
          new: true
      })
  }
- const removecontact = async(_id) =>{
-     return contactModel.findOneAndDelete({_id})
+ const removeRegistro = async(_id) =>{
+     return registroModel.findOneAndDelete({_id})
  }
  module.exports = {
-     getcontact,
-     getcontactById,
-     createcontact,
-     updatecontact,
-     removecontact
+     getRegistro,
+     getregistroById,
+     createRegistro,
+     updateRegistro,
+     removeRegistro
  }
