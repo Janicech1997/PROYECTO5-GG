@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-const registroRouter = require('./collection')
+const formularioRouter = require('./collection')
 
-router.use('/registro', registroRouter)
+router.use('/formulario', formularioRouter)
 
 module.exports = router
