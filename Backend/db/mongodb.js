@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
-require('dotenv').config();
+require('dotenv').config(); 
 
-const url = `mongodb+srv://janice97:${process.env.DB_PASSWORD}@cluster0.ncavhk5.mongodb.net/?retryWrites=true&w=majority`
+const url = `mongodb+srv://jani97:${process.env.DB_PASSWORD}@cluster0.ncavhk5.mongodb.net/?retryWrites=true&w=majority`
+console.log("------>",url)
 
 mongoose.connect(url)
 .then(()=>{

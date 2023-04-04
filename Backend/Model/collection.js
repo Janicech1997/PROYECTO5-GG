@@ -1,28 +1,28 @@
 const mongoose = require('mongoose')
 const {Schema} = mongoose
 
-const registroSchema = new Schema({
+const formularioSchema = new Schema({
     nombres: {
         type: String,
         required: true
     },
     apellidos: {
-        type: String,
+        type: Number,
         required: true
     },
     correo: {
         type: String,
         required: true
-    }, 
+    },
     password: {
         type: String,
-        required:true
+        required: true
     }
 },{
     versionKey: false,
     timestamps: true
 })
 
-const registroModel = mongoose.model('register', registroSchema)
+const formularioModel = mongoose.model('formulario', formularioSchema)
 
-module.exports = registroModel
+module.exports = formularioModel

@@ -1,16 +1,16 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const registroRouter = require('./apis')
+const formularioRouter = require('./apis')
 require('dotenv').config()
 require('./db/mongodb')
 
 app.use(cors())
 
 app.use(express.json())
-const PUERTO = process.env.PORT || 4500
+const PUERTO = process.env.PORT || 5500
 
-app.use(registroRouter)
+app.use(formularioRouter)
 
 app.get('/', (req,res)=>{
  res.send('Servidor vivo')
