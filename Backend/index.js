@@ -1,21 +1,22 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const formularioRouter = require('./apis')
-require('dotenv').config()
+require('dotenv').config(); 
 require('./db/mongodb')
-
-app.use(cors())
-
+const apiRoutes = require('./apis')
+app.use(cors());
 app.use(express.json())
-const PUERTO = process.env.PORT || 5500
 
-app.use(formularioRouter)
+app.use('/apis/v1', apiRoutes)
 
 app.get('/', (req,res)=>{
- res.send('Servidor vivo')
+    res.send('Servidor vivo')
 })
 
-app.listen(PUERTO, ()=>{
-    console.log(`Servidor conectado en puerto ${PUERTO}`)
+
+
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT, ()=>{
+    console.log(`Servidor conectado en puerto ${PORT}`)
 })
