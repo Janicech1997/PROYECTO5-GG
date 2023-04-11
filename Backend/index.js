@@ -3,19 +3,26 @@ const app = express()
 const cors = require('cors')
 require('dotenv').config()
 require('./db/mongodb')
+const users = require("./apis/users");
+const apiRoutes = require('./apis')
+const bodyParser = require('body-parser');
 
 
 app.use(cors())
+//app.use(express.json())
+app.use(bodyParser.json());
+app.use('/api/v1', apiRoutes)
 
-app.use(express.json())
-const PUERTO = process.env.PORT || 5000
-
-app.use(userRouter)
 
 app.get('/', (req,res)=>{
     res.send('Servidor vivo')
 })
 
+const PUERTO = process.env.PUERTO || 5000
+
+app.use('/users', users)
+
 app.listen(PUERTO, ()=>{
     console.log(`Servidor conectado en puerto ${PUERTO}`)
 })
+

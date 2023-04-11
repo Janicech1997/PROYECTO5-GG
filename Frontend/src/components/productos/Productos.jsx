@@ -4,6 +4,7 @@ import Footer from "../layout/Footer";
 import classes from "../productos/Productos.module.css";
 
 function Productos() {
+  
   return (
     <>
       <Header />
