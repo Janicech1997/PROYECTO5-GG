@@ -4,7 +4,7 @@ const cors = require('cors')
 require('dotenv').config()
 require('./db/mongodb')
 const users = require("./apis/users");
-const apiRoutes = require('./apis')
+const apiRoutes = require('./apis/index')
 const bodyParser = require('body-parser');
 
 

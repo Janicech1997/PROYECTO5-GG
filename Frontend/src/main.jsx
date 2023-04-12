@@ -6,7 +6,7 @@ import Contactos from "./components/contactos/Contactos";
 import Inicio from "./components/inicio/Inicio";
 import Productos from "./components/productos/Productos";
 import Registrarse from "./components/iniciarsesion/Registrarse";
-import Iniciarsesion from "./components/iniciarsesion/iniciarsesion";
+import Iniciarsesion from "./components/iniciarsesion/Iniciarsesion";
 
 
 const routesFromElements = createRoutesFromElements(
