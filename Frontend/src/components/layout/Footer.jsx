@@ -9,13 +9,12 @@ export default function Footer() {
       <footer className="footer-section">
   <div className="container">
     <ul className="footer-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="review.html">Games</a></li>
-      <li><a href="categories.html">Blog</a></li>
-      <li><a href="community.html">Forums</a></li>
+      <li><a href="./inicio">Inicio</a></li>
+      <li><a href="./productos">Productos</a></li>
+      <li><a href="./contactos">Contactos</a></li>
     </ul>
     <p className="copyright">{/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-      Copyright © All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+      Copyright ©  <i className="fa fa-heart-o" aria-hidden="true" /> por <a href="https://www.instagram.com/hey.janiz/" target="_blank">Janice Chen</a>
       {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
     </p>
   </div>

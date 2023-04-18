@@ -30,10 +30,11 @@ router.post("/login", async (req, res) => {
       },
       JWT_SECRET
     );
-
+    var u2 = userService.getByEmail(email);
+    console.log(u2);
     res.send({
-      _id: user._id,
-      token,
+      user: user,
+      token: token,
     });
   } catch (error) {
     console.error(error);

@@ -102,8 +102,8 @@ ol {
 }
 
 .spad {
-	padding-top: 97px;
-	padding-bottom: 97px;
+	padding-top: 30px;
+	padding-bottom: 50px;
 }
 
 .text-white h1,
@@ -259,6 +259,7 @@ ol {
 	display: inline-block;
 	float: left;
 	padding-top: 6px;
+	width: 50px;
 }
 
 .user-panel {

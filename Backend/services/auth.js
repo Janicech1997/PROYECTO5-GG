@@ -2,6 +2,7 @@ const bcrypt = require('bcrypt')
 
 const authService = class{
     constructor(userService){
+        console.log(userService)
         this.UserService = userService
     }
 
@@ -12,7 +13,7 @@ const authService = class{
         } else if ( await bcrypt.compare(password, user.password || !user)) {
             return user.toObject();
         } else {
-            throw new Error('Inautorizado')
+            throw new Error('No autorizado')
         }
     }
 }

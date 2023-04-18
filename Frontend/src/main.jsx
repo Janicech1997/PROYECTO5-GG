@@ -5,6 +5,7 @@ import App from "./App";
 import Contactos from "./components/contactos/Contactos";
 import Inicio from "./components/inicio/Inicio";
 import Productos from "./components/productos/Productos";
+import Productoindividual from "./components/productos/Productoindividual"
 import Registrarse from "./components/iniciarsesion/Registrarse";
 import Iniciarsesion from "./components/iniciarsesion/Iniciarsesion";
 
@@ -15,6 +16,7 @@ const routesFromElements = createRoutesFromElements(
     <Route path='/' element={<Inicio />} />
     <Route path='/inicio' element={<Inicio />} />
     <Route path='/productos' element={<Productos />} />
+    <Route path='/productoindividual' element={<Productoindividual />} />
     <Route path='/contactos' element={<Contactos />} />
     <Route path='/registrarse' element={<Registrarse />} />
     <Route path='/iniciarsesion' element={<Iniciarsesion />} />

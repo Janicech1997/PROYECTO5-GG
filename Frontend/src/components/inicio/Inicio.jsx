@@ -20,21 +20,19 @@ function Inicio (){
 	</div>
 </section>
 
-<section className="recent-game-section spad set-bg" data-setbg="img/recent-game-bg.png">
+<section className="noticiasgamer recent-game-section spad set-bg">
   <div className="container">
     <div className="section-title">
-      <div className="cata new">new</div>
-      <h2>Recent Games</h2>
+      <h2>Noticias Gamers</h2>
     </div>
     <div className="row">
       <div className="col-lg-4 col-md-6">
         <div className="recent-game-item">
-          <div className="rgi-thumb set-bg" data-setbg="img/recent-game/1.jpg">
-            <div className="cata new">new</div>
+        <div className="rgi-thumb set-bg"><img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc9ebc37d81a976c3/5e8cdc21baf2bd3cc4753c7a/IMAGE_2.jpg" alt />
+            <div className="cata new">Esports</div>
           </div>
           <div className="rgi-content">
-            <h5>Suspendisse ut justo tem por, rutrum</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
+            <p>Obtenga los últimos anuncios, noticias de actualidad, entrevistas, transacciones, reseñas de partidos y resúmenes de torneos de toda la escena de Valorant Esports.</p>
             <a href="#" className="comment">3 Comments</a>
             <div className="rgi-extra">
               <div className="rgi-star"><img src="img/icons/star.png" alt /></div>
@@ -45,12 +43,11 @@ function Inicio (){
       </div>
       <div className="col-lg-4 col-md-6">
         <div className="recent-game-item">
-          <div className="rgi-thumb set-bg" data-setbg="img/recent-game/2.jpg">
-            <div className="cata racing">racing</div>
+        <div className="rgi-thumb set-bg"><img src="https://images8.alphacoders.com/627/627080.png" alt />
+            <div className="cata racing">Lineups</div>
           </div>
           <div className="rgi-content">
-            <h5>Susce pulvinar metus nulla, vel  facilisis sem </h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
+            <p>Encuentre alineaciones útiles para sus agentes, mapas y habilidades favoritos. Comparta ese coeficiente intelectual de 200 suyo y envíe sus propias guías para desbloquear premios de perfil únicos.</p>
             <a href="#" className="comment">3 Comments</a>
             <div className="rgi-extra">
               <div className="rgi-star"><img src="img/icons/star.png" alt /></div>
@@ -61,12 +58,11 @@ function Inicio (){
       </div>
       <div className="col-lg-4 col-md-6">
         <div className="recent-game-item">
-          <div className="rgi-thumb set-bg" data-setbg="img/recent-game/3.jpg">
-            <div className="cata adventure">Adventure</div>
+          <div className="rgi-thumb set-bg"><img src="https://images8.alphacoders.com/124/1247192.png" alt />
+            <div className="cata adventure">Insights</div>
           </div>
           <div className="rgi-content">
-            <h5>Suspendisse ut justo tem por, rutrum</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
+            <p>Eche un vistazo rápido a la Tasa de selección de todos los agentes en Valorant. Vea su porcentaje de ganancias promedio o la relación K/D. Las estadísticas están determinadas por los promedios globales de jugadores de las últimas dos semanas.</p>
             <a href="#" className="comment">3 Comments</a>
             <div className="rgi-extra">
               <div className="rgi-star"><img src="img/icons/star.png" alt /></div>

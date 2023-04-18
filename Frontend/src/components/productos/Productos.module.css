@@ -164,3 +164,8 @@ padding: 30px;
   text-align: center;
   position: relative;
 }
+.carritoventa{
+  display: inline-flex;
+}
+
+

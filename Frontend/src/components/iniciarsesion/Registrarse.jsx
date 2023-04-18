@@ -10,7 +10,9 @@ const Registrarse = () => {
    const saverUser = async()=>{
     const url = 'http://localhost:5000/users/signup'
     const result = await axios.post(url, userData)
+    window.location.replace("./iniciarsesion");
     console.log(result)
+    
    }
    
    const handleChange = (e) =>{
