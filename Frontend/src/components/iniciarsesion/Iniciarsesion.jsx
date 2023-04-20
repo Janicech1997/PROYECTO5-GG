@@ -26,7 +26,7 @@ const Iniciarsesion = () => {
         })
         .then(async (response) => {
           console.log(response);
-          navigation("/productoindividual");
+          navigation("/productoindividualpago");
         });
     });
   };

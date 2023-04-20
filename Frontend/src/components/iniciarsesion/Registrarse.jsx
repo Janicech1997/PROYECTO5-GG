@@ -23,7 +23,8 @@ const Registrarse = () => {
     })
     console.log(userData)
    }
-
+   console.log(handleChange)
+   
   return (
     <>
     <Header />

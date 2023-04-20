@@ -6,8 +6,10 @@ import Contactos from "./components/contactos/Contactos";
 import Inicio from "./components/inicio/Inicio";
 import Productos from "./components/productos/Productos";
 import Productoindividual from "./components/productos/Productoindividual"
+import Productoindividualpago from "./components/productos/Productoindividualpago"
 import Registrarse from "./components/iniciarsesion/Registrarse";
 import Iniciarsesion from "./components/iniciarsesion/Iniciarsesion";
+import UserProvider from './context/UserContext'
 
 
 const routesFromElements = createRoutesFromElements(
@@ -20,6 +22,7 @@ const routesFromElements = createRoutesFromElements(
     <Route path='/contactos' element={<Contactos />} />
     <Route path='/registrarse' element={<Registrarse />} />
     <Route path='/iniciarsesion' element={<Iniciarsesion />} />
+    <Route path='/productoindividualpago' element={<UserProvider><Productoindividualpago /></UserProvider> } />
   </Route>
 );
 
