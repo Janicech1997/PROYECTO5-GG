@@ -9,7 +9,8 @@ import Productoindividual from "./components/productos/Productoindividual"
 import Productoindividualpago from "./components/productos/Productoindividualpago"
 import Registrarse from "./components/iniciarsesion/Registrarse";
 import Iniciarsesion from "./components/iniciarsesion/Iniciarsesion";
-import UserProvider from './context/UserContext'
+import UserProvider from './context/UserContext';
+import {PayPalScriptProvider} from '@paypal/react-paypal-js'
 
 
 const routesFromElements = createRoutesFromElements(
@@ -22,7 +23,9 @@ const routesFromElements = createRoutesFromElements(
     <Route path='/contactos' element={<Contactos />} />
     <Route path='/registrarse' element={<Registrarse />} />
     <Route path='/iniciarsesion' element={<Iniciarsesion />} />
-    <Route path='/productoindividualpago' element={<UserProvider><Productoindividualpago /></UserProvider> } />
+    <Route path='/productoindividualpago' element={<UserProvider><PayPalScriptProvider options={{"client-id": "ASp9Pe-Q2fNvDnMa9lwNcW5knugyaxwYsiVIASWs4Aw6B1rnEGAWQy-4Us24f8crPjEbt_rxxQkd5v7M",
+    components: "buttons",
+    currency: "USD"}}><Productoindividualpago /> </PayPalScriptProvider></UserProvider> } />
   </Route>
 );
 
