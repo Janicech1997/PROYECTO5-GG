@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
   res.send(products)
 })
 
-router.post('/products', async (req, res) => {
+router.post('/createProduct', async (req, res) => {
   const body = req.body
 
   try {
@@ -34,7 +34,7 @@ router.post('/products', async (req, res) => {
   }
 })
 
-router.put('/createProduct', async (req, res) => {
+router.put('/:id', async (req, res) => {
   const { id } = req.params
   const body = req.body
   const product = await updateProduct(id, body)

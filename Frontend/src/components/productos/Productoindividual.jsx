@@ -14,7 +14,7 @@ const Productoindividual = () => {
     <div className={classes.productdiv}>
       <div className={classes.productdivleft}>
         <div className={classes.imgcontainer}>
-          <img src="https://picsum.photos/200" alt="watch" />
+          <img src="https://picsum.photos/200" />
         </div>
         <div className={classes.hovercontainer}>
           <div><img src="https://picsum.photos/200" /></div>
