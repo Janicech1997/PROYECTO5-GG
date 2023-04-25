@@ -13,6 +13,7 @@ import UserProvider from './context/UserContext';
 import {PayPalScriptProvider} from '@paypal/react-paypal-js'
 
 
+
 const routesFromElements = createRoutesFromElements(
   <Route>
     <Route index element={<Inicio />} />
