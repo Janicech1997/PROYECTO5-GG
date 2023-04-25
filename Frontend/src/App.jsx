@@ -1,6 +1,6 @@
 import React from "react";
-import "./css/bootstrap.min.css";
-import "./css/font-awesome.min.css";
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "./css/owl.carousel.css";
 import "./css/style.css"; 
 import "./css/animate.css";
