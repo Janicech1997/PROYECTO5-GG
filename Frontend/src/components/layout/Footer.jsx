@@ -14,7 +14,7 @@ export default function Footer() {
       <li><a href="./contactos">Contactos</a></li>
     </ul>
     <p className="copyright">{/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-      Copyright ©  <i className="fa fa-heart-o" aria-hidden="true" /> por <a href="https://www.instagram.com/hey.janiz/" target="_blank">Janice Chen</a>
+      Copyright © por <a href="https://www.instagram.com/hey.janiz/" target="_blank">Janice Chen</a>
       {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
     </p>
   </div>
