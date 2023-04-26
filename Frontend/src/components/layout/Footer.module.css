@@ -1,3 +1,37 @@
 .footerfin{ 
     box-sizing: border-box;
 }
+.footersection {
+	padding: 18px 0 16px;
+	overflow: hidden;
+	background: #252525;
+}
+
+.footermenu {
+	list-style: none;
+	float: right;
+}
+
+.footermenu li {
+	display: inline;
+}
+
+.footermenu li a {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 500;
+	color: #aeaeae;
+	margin-left: 30px;
+}
+
+.copyright {
+	float: left;
+	margin-bottom: 0;
+	font-weight: 500;
+	color: #aeaeae;
+}
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1176px;
+	}
+}

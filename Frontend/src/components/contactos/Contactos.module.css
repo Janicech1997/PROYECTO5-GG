@@ -1,0 +1,21 @@
+.container{
+    padding: 30px;
+}
+.thanks {
+  padding: 1rem;
+  color: #198754;
+  border: 1px solid #198754;
+  display: none;
+}
+
+button.btn {
+  pointer-events: auto !important;
+}
+
+button.btn[disabled] {
+  cursor: not-allowed;
+}
+
+.spinner-border {
+  display: none;
+}
