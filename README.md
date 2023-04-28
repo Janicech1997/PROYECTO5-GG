@@ -1,9 +1,9 @@
 # PROYECTO5-GG
 
 
-Este es un proyecto de una aplicación de ecommerce usando VITE-REACT Y mongoDB
+Este es un proyecto de una aplicación de ecommerce integrando MONGO, EXPRESS, REACT Y NODEJS, en el cual se comercialice un producto vía pagos online. Se utilizará PayPal Sandbox para simular los pagos.
 
-Se utilizó props, hooks y useState tamnién tomando en cuenta una Sección de reserva junto a su formulario.
+Se utilizó ReactJS, Context API, checkout, useState, registro de usuario, entre otros.
 
 El link para revisar el proyecto es: 
 Proyecto completo: https://github.com/Janicech1997/PROYECTO5-GG
