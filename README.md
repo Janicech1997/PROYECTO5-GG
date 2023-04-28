@@ -10,4 +10,5 @@ Proyecto completo: https://github.com/Janicech1997/PROYECTO5-GG
 Backend: https://github.com/Janicech1997/Backend5
 Frontend: https://github.com/Janicech1997/Frontend5
 
-Para ver el proyecto en vercel click aquí: https://frontend5.vercel.app/
+Para ver el proyecto en vercel click aquí: Frontend: https://frontend5.vercel.app/
+Backend: https://backend5-chi.vercel.app
